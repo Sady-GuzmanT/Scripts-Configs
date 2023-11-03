@@ -1,0 +1,27 @@
+--- AppVolume.original.ahk	2022-07-01 16:52:23.496259300 -0500
++++ AppVolume.ahk	2022-07-01 16:52:23.496259300 -0500
+@@ -1,0 +2,6 @@
++; Original:
++; https://gist.github.com/5b7ba418e685e52c3e6507e5c6972959#file-volume-ahk-L102
++
++; This revision:
++; https://gist.github.com/c06335f3aed215cdea414c33354a728b#file-appvolume-ahk
++
+@@ -19 +25 @@
+-		VA_IMMDevice_Activate(pIMMD, IID_IASM2, 0, 0, pIASM2)
++		VA_IMMDevice_Activate(pIMMD, IID_IASM2, 0, 0, pIASM2:=0)
+@@ -23 +29 @@
+-		VA_IAudioSessionManager2_GetSessionEnumerator(pIASM2, pIASE)
++		VA_IAudioSessionManager2_GetSessionEnumerator(pIASM2, pIASE:=0)
+@@ -27 +33 @@
+-		VA_IAudioSessionEnumerator_GetCount(pIASE, Count)
++		VA_IAudioSessionEnumerator_GetCount(pIASE, Count:=0)
+@@ -31 +37 @@
+-			VA_IAudioSessionEnumerator_GetSession(pIASE, A_Index-1, pIASC)
++			VA_IAudioSessionEnumerator_GetSession(pIASE, A_Index-1, pIASC:=0)
+@@ -36 +42 @@
+-			VA_IAudioSessionControl2_GetProcessID(pIASC2, PID)
++			VA_IAudioSessionControl2_GetProcessID(pIASC2, PID:=0)
+@@ -62 +68 @@
+-			VA_ISimpleAudioVolume_GetMasterVolume(pISAV, fLevel)
++			VA_ISimpleAudioVolume_GetMasterVolume(pISAV, fLevel:=0)

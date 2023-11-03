@@ -1,0 +1,14 @@
+--- VA.original.ahk	2022-07-01 16:52:23.496259300 -0500
++++ VA.ahk	2022-07-01 16:52:23.496259300 -0500
+@@ -1,0 +2,6 @@
++; Original:
++; https://www.autohotkey.com/board/topic/21984-vista-audio-control-functions/
++
++; This revision:
++; https://gist.github.com/c06335f3aed215cdea414c33354a728b#file-va-ahk
++
+@@ -319,0 +326 @@
++        m1 := ""
+@@ -345 +352 @@
+-    VA_IMMDeviceEnumerator_EnumAudioEndpoints(deviceEnumerator, flow, 1, devices)
++    VA_IMMDeviceEnumerator_EnumAudioEndpoints(deviceEnumerator, flow, 1, devices:=0)
