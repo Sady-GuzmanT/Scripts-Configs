@@ -1,0 +1,19 @@
+control + p: Abre archivo
+Control + TAB: navega archivos abiertos
+Control/Shift + P: Command Bar
+
+==> En settings.JSON para cambiar colos de docstring de PYTHON
+"editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "scope":"string.quoted.docstring.multi.python",
+                "settings": {
+                    "foreground": "#69676c" //change to your preference
+                }
+            }
+        ]
+    }
+
+
+
+https://github.com/Microsoft/vscode/pull/29393
