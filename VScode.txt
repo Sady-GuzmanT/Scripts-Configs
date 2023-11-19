@@ -17,3 +17,29 @@ Control/Shift + P: Command Bar
 
 
 https://github.com/Microsoft/vscode/pull/29393
+
+
+--> Arreglando la coma y junto a la primera conf de Catppucin:
+
+{
+    "window.titleBarStyle": "custom",
+    "[python]": {
+        "editor.formatOnType": true
+    },
+    "workbench.colorTheme": "Tokyo Night Storm",
+    "window.zoomLevel": 2,
+    "workbench.iconTheme": "catppuccin-perfect-dark",
+    "workbench.sideBar.location": "right",
+
+    "editor.tokenColorCustomizations":
+    {
+        "textMateRules": [{
+                "scope":"string.quoted.docstring.multi.python",
+                "settings": {
+                    "foreground": "#5f6996" //change to your preference
+                }
+            
+        }]
+    }
+    
+}
