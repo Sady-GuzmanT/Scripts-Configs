@@ -1,2 +1,2 @@
 # Scripts
-Scripts de AutoHotkey que uso
+Scripts de AutoHotkey y configuraciones de ambientes que uso
