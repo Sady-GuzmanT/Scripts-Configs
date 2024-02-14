@@ -22,3 +22,4 @@ Set-PSReadLineOption -PredictionViewStyle ListView
 
 Tambien uso este PROFILE:
 oh-my-posh init pwsh --config 'C:\Users\Matias\AppData\Local\Programs\oh-my-posh\themes\jblab_2021.omp.json' | Invoke-Expression
+cargar cambios con '. $PROFILE'
