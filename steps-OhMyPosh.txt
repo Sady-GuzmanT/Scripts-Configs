@@ -23,3 +23,24 @@ Set-PSReadLineOption -PredictionViewStyle ListView
 Tambien uso este PROFILE:
 oh-my-posh init pwsh --config 'C:\Users\Matias\AppData\Local\Programs\oh-my-posh\themes\jblab_2021.omp.json' | Invoke-Expression
 cargar cambios con '. $PROFILE'
+
+
+https://www.nerdfonts.com/font-downloads
+
+LINUX 
+
+sudo apt update
+
+sudo apt install zsh -y
+
+->clonar repo de ohmyzesh
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+-> Clonar temas
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/powerlevel10k
+
+dentro de home/matias/.zshrc hay que especificar tema: powerlevel10k/powerlevel10k
+
+-> reiniciar ubuntu terminal y seguir pasos de config
+
+->Pen history list completion 
