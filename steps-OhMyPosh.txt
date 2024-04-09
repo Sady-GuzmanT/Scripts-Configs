@@ -43,4 +43,15 @@ dentro de home/matias/.zshrc hay que especificar tema: powerlevel10k/powerlevel1
 
 -> reiniciar ubuntu terminal y seguir pasos de config
 
-->Pen history list completion 
+plugins
+
+https://github.com/zsh-users/zsh-syntax-highlighting
+https://github.com/zsh-users/zsh-autosuggestions
+https://github.com/zsh-users/zsh-history-substring-search
+-----> nano .zshrc
+# history substring search options
+bindkey '^[[A' history-substring-search-up
+bindkey '^[[B' history-substring-search-down
+
+
+
