@@ -1,0 +1,117 @@
+WSL - Ubuntu
+
+## INSTALL
+
+# add the repo
+$ sudo add-apt-repository ppa:neovim-ppa/unstable
+
+# update & install
+$ sudo apt-get update
+$ sudo apt-get install neovim 
+
+## SETUP init.vim
+
+# run '$ nvim' then:
+
+# create a directory to hold the init.vim file
+:call mkdir(stdpath('config'), 'p')
+# then create an init.vim file
+:exe 'edit '.stdpath('config').'/init.vim'
+
+
+## ALIAS
+$ echo 'alias vim=nvim' >> .zshrc
+$ echo 'alias oldvim=vim' >> .zshrc
+
+
+## Installing NVChad
+https://github.com/NvChad/NvChad?tab=readme-ov-file
+
+## Before cloning
+
+# Install nerd-font
+
+# Backup
+$ mv ~/.config/nvim ~/.config/nvim.backup
+
+# Delete cache
+$ rm -rf ~/.local/share/nvim
+
+## GIT CLONE
+$ git clone -b v2.0 https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 && nvim
+
+# Open Nvim 
+# when 'Do you want to install example custom config' -> N
+
+
+## Using NVChad
+
+# default Leader key: SPACE
+# CheatSheet for commands: SPACE + c + h (Same for closing cheatSheet)
+# Hold Leader key for suggestions
+# Theme: Space + t + h
+
+## Use Nvim Tree plugin
+# File Tree bar: Ctrl + n
+# to create file: a
+# to rename: r
+# to copy: c
+# to paste: p
+# to mark: m
+
+
+## Navigate files using shortcut
+# search file: SPACE + f + f
+# search open files: SPACE + f + b
+
+## Window Navigation
+# Vertical Split
+:vsp
+
+# Horizontal Split
+:sp
+
+# Navigate between splits
+ctrl + h,j,k,l
+
+# Close split
+:q
+
+# Change between file buffers
+TAB, Shift + TAB (reverse)
+
+# Close Buffer
+SPACE + x
+
+# Open terminal Split
+SPACE + h (Horizontal)
+SPACE + v (Vertical)
+
+# Toggle line numbers
+SPACE + n
+
+
+
+
+# Install new sintax for language
+:TSInstall elixir
+
+# Check installed sintaxes
+:TSInstallInfo
+
+
+
+
+## TO REMOVE NVIM
+
+# Simple
+$ sudo apt-get remove neovim 
+
+# To include depending packages
+$ sudo apt-get remove --auto-remove neovim 
+
+# Using Purge
+$ sudo apt-get purge neovim 
+
+# Using purge to also remove everything regarding the package - Useful for new install
+$ sudo apt-get purge --auto-remove neovim 
