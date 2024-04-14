@@ -140,4 +140,13 @@ typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
 
 pwd
 alias vim="nvim"
-alias oldvim="vim"
+
+# alias para usar fuzzy finder con manual
+alias fman="compgen -c | fzf | xargs man"
+
+# Fuzzy Finder repo depende
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+
+
+
