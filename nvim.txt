@@ -1,0 +1,20 @@
+# Select all: ggVG
+
+# Select to beggining: v + 0
+
+# Select to end: v + $ 
+
+# Delete one word: ctrl + w
+
+# copy / paste / cut: Enter VISUAL -> (v) + y / p / d
+
+# To use FIND: type /'string'
+
+# To UNDO in INSERT: ctrl + u
+
+# To UNDO in NORMAL: u
+
+# To REDO in NORMAL: u (after using UNDO in INSERT) 
+                    or ctrl + r (after using u in NORMAL)
+
+
